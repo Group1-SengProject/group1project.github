@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Connect Academy</title>
+    <style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #00887A;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #006B5B;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+.navbar-nav {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.nav-item {
+    padding: 10px 15px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    background-color: #004C3F;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+/* Main Content Layout */
+.row {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+#side-bar {
+    width: 20%;
+    background-color: #E0F7F4;
+    padding: 20px;
+    min-width: 200px;
+}
+
+#main-content {
+    width: 75%;
+    min-width: 300px;
+}
+
+/* Responsive Tables */
+.asl-table-container {
+    overflow-x: auto;
+}
+
+.asl-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    min-width: 600px;
+}
+
+.asl-table th {
+    background-color: #00887A;
+    color: white;
+    padding: 10px;
+}
+
+.asl-table td {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+/* Responsive Image inside Tables */
+.asl-table img {
+    width: 100%; /* Ensures images scale properly */
+    max-width: 100px; /* Limit max width for small screens */
+    height: auto;
+}
+
+/* Footer */
+footer {
+    background-color: #00887A;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+footer form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+footer input {
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    width: 80%;
+}
+
+footer button {
+    background-color: #FFA500;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+footer button:hover {
+    background-color: #FF8800;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #side-bar, #main-content {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        font-size: 20px;
+        padding: 15px;
+    }
+
+    .nav-item {
+        padding: 8px;
+    }
+
+    .asl-table-container {
+        overflow-x: scroll;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .asl-table img {
+        width: 50px; /* Adjust as needed */
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    .nav-link {
+        font-size: 14px;
+    }
+
+    .nav-item {
+        padding: 5px;
+    }
+
+    footer input {
+        width: 100%;
+    }
+
+    footer button {
+        width: 100%;
+    }
+}
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sign Connect Academy</h1>
+        <p><i>Building Bonds Beyond Words</i></p>
+    </header>
+    <nav class="navbar">
+        <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="#" class="active">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Learn</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Quizzes</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Chat</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Premium</a></li>
+            <li class="nav-item"><a class="nav-link" href="#" class="login-btn">Login</a></li>
+        </ul>
+    </nav>
+    <div class="row">
+        <aside id="side-bar">
+            <h3>ASL</h3>
+            <ul>
+                <li><a href="#letter-section">Letters</a></li>
+                <li><a href="#number-section">Numbers</a></li>
+            </ul>
+        </aside>
+        <main id="main-content">
+            <section>
+                <h2>American Sign Language</h2>
+                <p>Here, those who are <i>Hard of hearing</i> and interested users can learn.</p>
+            </section>
+            <section id="letter-section">
+                <table class="asl-table">
+                    <tr><th colspan="26">ASL to English Alphabet</th></tr>
+                    <tr>
+                        <td><img src="images/ASL/A.png" alt="A"></td><td></td>
+                        <td><img src="images/ASL/B.png" alt="B"></td><td></td>
+                        <td><img src="images/ASL/C.png" alt="C"></td><td></td>
+                        <td><img src="images/ASL/D.png" alt="D"></td><td></td>
+                        <td><img src="images/ASL/E.png" alt="E"></td><td></td>
+                        <td><img src="images/ASL/F.png" alt="F"></td><td></td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/ASL/G.png" alt="G"></td><td></td>
+                        <td><img src="images/ASL/H.png" alt="H"></td><td></td>
+                        <td><img src="images/ASL/I.png" alt="I"></td><td></td>
+                        <td><img src="images/ASL/J.png" alt="J"></td><td></td>
+                        <td><img src="images/ASL/K.png" alt="K"></td><td></td>
+                        <td><img src="images/ASL/L.png" alt="L"></td><td></td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/ASL/M.png" alt="M"></td><td></td>
+                        <td><img src="images/ASL/N.png" alt="N"></td><td></td>
+                        <td><img src="images/ASL/O.png" alt="O"></td><td></td>
+                        <td><img src="images/ASL/P.png" alt="P"></td><td></td>
+                        <td><img src="images/ASL/Q.png" alt="Q"></td><td></td>
+                        <td><img src="images/ASL/R.png" alt="R"></td><td></td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/ASL/S.png" alt="S"></td><td></td>
+                        <td><img src="images/ASL/T.png" alt="T"></td><td></td>
+                        <td><img src="images/ASL/U.png" alt="U"></td><td></td>
+                        <td><img src="images/ASL/V.png" alt="V"></td><td></td>
+                        <td><img src="images/ASL/W.png" alt="W"></td><td></td>
+                        <td><img src="images/ASL/X.png" alt="X"></td><td></td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/ASL/Y.png" alt="Y"></td><td></td>
+                        <td><img src="images/ASL/Z.png" alt="Z"></td><td></td>
+                    </tr>
+                </table>
+            </section>
+            <section id="number-section">
+                <p>Welcome to the number section.</p>
+                <table class="asl-table">
+                    <tr><th colspan="10">ASL to Numbers</th></tr>
+                    <tr>
+                        <td><img src="images/ASL/2.jpg" alt="1"></td><td></td>
+                        <td><img src="images/ASL/3.jpg" alt="2"></td><td></td>
+                        <td><img src="images/ASL/4.jpg" alt="3"></td><td></td>
+                        <td><img src="images/ASL/1.jpg" alt="4"></td><td></td>
+                        <td><img src="images/ASL/5.jpg" alt="5"></td><td></td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/ASL/6.jpg" alt="6"></td><td></td>
+                        <td><img src="images/ASL/7.jpg" alt="7"></td><td></td>
+                        <td><img src="images/ASL/8.jpg" alt="8"></td><td></td>
+                        <td><img src="images/ASL/9.jpg" alt="9"></td><td></td>
+                        <td><img src="images/ASL/10.jpg" alt="10"></td><td></td>
+                    </tr>
+                </table>
+            </section>
+        </main>
+    </div>
+    <footer>
+        <p>&copy; 2025 Sign Language Learning Hub | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
